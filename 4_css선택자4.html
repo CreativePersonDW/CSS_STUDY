@@ -1,0 +1,62 @@
+<html lang='ko'>
+    <head>
+        <title>선택자 우선순위</title>
+        <style>
+
+            #test1{
+                background: plum;
+                color: white;
+            }
+
+            .test1{
+                background: yellowgreen;
+                color: white;
+            }
+            div{
+                width: 300;
+                height: 300;
+                background: orangered;
+            }
+
+            #test2{
+                width: 300;
+                height: 300;
+                background: yellow;
+                color: black;
+            }
+
+            .test2{
+                background: black;
+                color:white;
+            }
+            p{
+                background: orangered!important;
+                color:white!important;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>선택자 우선순위</h1>
+        <p>기본적으로 css속성은 위에서부터 아래로 적용이 되지만,
+            같은 태그에 여러 개의 css속성이 설정된 경우에는 우선순위에
+            따라 스타일이 적용된다.
+        </p>
+        <pre>태그 < 클래스 < 아이디 < 인라인 < !important 순서로
+            우선순위를 가진다.
+        </pre>
+        <hr>
+        <div id="test1" class="test1" style="background: purple; color: red;">우선순위 테스트1</div>
+        <p id="test2" class = "test2" style="background: yellowgreen;">우선순위 테스트2</p>
+
+
+        
+
+
+
+
+
+
+        <br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br>
+    </body>
+</html>
